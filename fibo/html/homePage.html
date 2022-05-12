@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css">
+   <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../css/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="theme-color" content="#6600ff">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body id="body">
+
+   <header class="header">
+      <div class="first__container">
+         <div class="left">
+            <div class="logo">
+               <a href="../html/homePage.html"><img src="../images/Rectangle 76.png" alt=""></a>
+            </div>
+            <div class="delivery">
+               <h2>Доставка пасты <span>Москва</span></h2>
+               <p><img src="../images/image 31.png" alt=""> Яндекс еда <span></span> 4.8 <i class="fa fa-star"></i>
+                  Время доставки <span> </span> от 31 мин </p>
+            </div>
+         </div>
+         <div class="right">
+            <button>Заказать звонок</button>
+            <h2>8 499 391-84-49</h2>
+         </div>
+      </div>
+      <div class="second__container">
+         <ul class="menu">
+            <li><a href="">Пицца</a></li>
+            <li><a href="">Паста</a></li>
+            <li><a href="">Супы</a></li>
+            <li><a href="">Салаты</a></li>
+            <li><a href="">Напитки</a></li>
+            <li><a href="">Десерты</a></li>
+            <li><a href="">Бакалея</a></li>
+            <li><a href="">Антипасти</a></li>
+            <li><a href="../html/stock.html">Акции</a></li>
+            <li><a href="">Комбо</a></li>
+            <li><a href="../html/contact.html">Контакты</a></li>
+            <li>
+               <p onclick="openRegistration()">Войти</p>
+            </li>
+         </ul>
+         <div class="cart">
+            <h2>8 499 391-84-49</h2>
+            <a href="../html/cart.html">Корзина | </a>
+            <span onclick="cart()" id="Addcart">1</span>
+            <div class="menuPhone" onclick="menuPhone()">
+               <div class="lineMenu"></div>
+               <div class="lineMenu"></div>
+               <div class="lineMenu"></div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="slider">
+      <div class="fiboSlider">
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+         <div><img src="../images/image 5.png" alt=""></div>
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+         <div><img src="../images/image 31 (1).png" alt=""></div>
+      </div>
+   </div>
+
+   <section class="home">
+      <h1 class="header__product">Новинки</h1>
+
+      <div class="new__container">
+         <div class="container new__slider">
+            <div class="box">
+               <div class="new__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="new__info">
+                  <h3>Карбонара</h3>
+                  <p>от 120 ₽</p>
+               </div>
+            </div>
+            <div class="box">
+               <div class="new__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="new__info">
+                  <h3>Карбонара</h3>
+                  <p>от 120 ₽</p>
+               </div>
+            </div>
+            <div class="box">
+               <div class="new__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="new__info">
+                  <h3>Карбонара</h3>
+                  <p>от 120 ₽</p>
+               </div>
+            </div>
+            <div class="box">
+               <div class="new__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="new__info">
+                  <h3>Карбонара</h3>
+                  <p>от 120 ₽</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h1 class="header__product paste">Паста</h1>
+
+      <div class="product">
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10.png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (2).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (3).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="product__img">
+               <img src="../images/image 10 (1).png" alt="">
+            </div>
+            <div class="product__info">
+               <h2>С креветками и трюфелями</h2>
+               <p>Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+               </p>
+               <div class="toCart">
+                  <p>от 600 ₽</p>
+                  <button onclick="AddToCart()">В корзину</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <h1 class="header__stock">Наши <span>акции</span></h1>
+
+
+      <div class="stock__container home">
+         <div class="first__box">
+            <div class="box">
+               <img src="../images/image26.png" alt="">
+            </div>
+         </div>
+         <div class="second__box">
+            <div class="box">
+               <img src="../images/image26.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image26.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image26.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image26.png" alt="">
+            </div>
+         </div>
+         <button>Все вкции</button>
+      </div>
+   </section>
+
+   <section class="openCart"> </section>
+
+   <div class="payment">
+      <h1 class="header__payment">Оплата и доставка</h1>
+      <div class="payment__container">
+         <div class="box">
+            <div class="item">
+               <div class="item__img">
+                  <img src="../images/image 15.png" alt="">
+               </div>
+               <div class="item__info">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae harum autem quia a asperiores.</p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="item__img">
+                  <img src="../images/image 15 (1).png" alt="">
+               </div>
+               <div class="item__info">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae harum autem quia a asperiores.</p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="item__img">
+                  <img src="../images/image 15 (2).png" alt="">
+               </div>
+               <div class="item__info">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae harum autem quia a asperiores.</p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="item__img">
+                  <img src="../images/image 15 (3).png" alt="">
+               </div>
+               <div class="item__info">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae harum autem quia a asperiores.</p>
+               </div>
+            </div>
+         </div>
+         <div class="box map__img"></div>
+      </div>
+   </div>
+
+
+
+   <footer class="footer">
+      <div class="left">
+         <div class="logo">
+            <a href=""><img src="../images/Rectangle 76.png" alt=""></a>
+         </div>
+         <div class="box">
+            <a href="">Калорийность и состав</a>
+            <a href="">Правовая информация</a>
+         </div>
+         <div class="social-media">
+            <p>Мы в соцсетях</p>
+            <div class="box">
+               <div class="item">
+                  <a href="">YouTube</a>
+                  <a href="">Instagram</a>
+               </div>
+               <div class="item">
+                  <a href="">Facebook</a>
+                  <a href="">ВКонтакте</a>
+               </div>
+               <div class="item">
+                  <a id="adress" href="https://www.google.ru/maps/place/%D0%BF%D1%80.+%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+86%D0%B2,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+119415/@55.6613636,37.4776425,442m/data=!3m2!1e3!4b1!4m5!3m4!1s0x46b54da002656bc7:0xa799933657c1d4f!8m2!3d55.6613606!4d37.4798312"
+                     target="_blanck">Москва ул. Проспект <br> Вернадского 86В</a>
+               </div>
+            </div>
+         </div>
+         <div class="protection">
+            <p>YaBao Все праав защищены © 2022</p>
+         </div>
+      </div>
+      <div class="right">
+         <p>Остались вопросы? А мы всегда на связи:</p>
+         <div class="container">
+            <div class="box">
+               <img src="../images/image 17.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 18.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 19.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 20.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 21.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 22.png" alt="">
+            </div>
+            <div class="box box1">
+               <p>Написать нам</p>
+            </div>
+         </div>
+         <h1>8 499 391-84-49</h1>
+         <a href="" id="call">Заказать звонок</a>
+         <p class="none">YaBao Все праав защищены © 2022</p>
+      </div>
+   </footer>
+
+   <div class="addToCart">
+      <div class="container">
+         <div class="item forDel">
+            <div class="box first__box">
+               <div class="box__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="box__info">
+                  <h4>С креветками и трюфелями</h4>
+                  <div class="add">
+                     <button onclick="addMinus()">-</button>
+                     <p class="CartMuch">1</p> <button onclick="addPlus()">+</button>
+                  </div>
+               </div>
+            </div>
+            <div class="box second__box">
+               <i class="fa fa-times-circle-o" aria-hidden="true" onclick="del()"></i>
+               <h1 class="price price1">120 ₽</h1>
+            </div>
+         </div>
+         <div class="item forDel2">
+            <div class="box first__box">
+               <div class="box__img">
+                  <img src="../images/image 8.png" alt="">
+               </div>
+               <div class="box__info">
+                  <h4>С креветками и трюфелями</h4>
+                  <div class="add">
+                     <button onclick="addMinus2()">-</button>
+                     <p class="CartMuch2">1</p> <button onclick="addPlus2()">+</button>
+                  </div>
+               </div>
+            </div>
+            <div class="box second__box">
+               <i class="fa fa-times-circle-o" aria-hidden="true" onclick="del2()"></i>
+               <h1 class="price price2">120 ₽</h1>
+            </div>
+         </div>
+         <div class="allPrice">
+            <div class="box">
+               <h3>Сумма заказа</h3>
+            </div>
+            <div class="box">
+               <h2 class="allMoney">240$</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="producta">
+      <div class="container">
+         <div class="bigBox bigBox1">
+            <img src="../images/image 10 (1).png" alt="">
+         </div>
+         <div class="bigBox">
+            <div class="box">
+               <h2>С креветками и трюфелями</h2>
+               <i class="fa fa-times" aria-hidden="true" onclick="closeProduct()"></i>
+            </div>
+            <span>25 см, традиционное тесто, 360 г</span>
+            <span>Моцарелла, соус альфредо</span>
+            <div class="box">
+               <button class="active">Маленькая</button>
+               <button>Средняя</button>
+               <button>Большая</button>
+            </div>
+            <div class="box boxButton">
+               <button class="active">Традиционное</button>
+               <button>Тонкое</button>
+            </div>
+            <div class="scroll">
+               <div class="box">
+                  <img src="../images/kh (1).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+               <div class="box">
+                  <img src="../images/kh (2).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+               <div class="box">
+                  <img src="../images/kh (3).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+               <div class="box">
+                  <img src="../images/kh (3).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+               <div class="box">
+                  <img src="../images/kh (2).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+               <div class="box">
+                  <img src="../images/kh (1).png" alt="">
+                  <p>Острый <br> халапенью</p>
+                  <span>от 120 ₽</span>
+               </div>
+            </div>
+            <button class="addcart" onclick="addCart()">Добавить в корзину 1 048 ₽</button>
+         </div>
+      </div>
+   </div>
+
+
+   <form action="#">
+      <div class="registration">
+         <div class="container">
+            <div class="box1">
+               <h1>Вход на сайт</h1>
+               <i class="fa fa-times" aria-hidden="true" onclick="closeRegistration()"></i>
+            </div>
+            <div class="box2">
+               <p>Номер телефона</p> <input type="text" placeholder="name" id="khushnud">
+               <p class="wrong" id="wrong"> <i class="fa fa-exclamation" aria-hidden="true"></i> Ввидите имя</p>
+            </div>
+            <div class="box3">
+               <button onclick="smsCod()">Выслать код</button>
+               <p>Продолжая, вы соглашаетесь со сбором и обработкой персональных данных и пользовательским
+                  соглашением
+               </p>
+            </div>
+         </div>
+      </div>
+   </form>
+
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="../slick-1.8.1/slick/slick.min.js"></script>
+   <script src="../js/script.js"></script>
+
+   <script>
+      $('.fiboSlider').slick({
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+      });
+   </script>
+
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="../css/making_an_order.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="openCart">
+      <div class="header__cart">
+         <div class="left__header">
+            <a href="../html/homePage.html"><img src="../images/Rectangle 76.png" alt=""></a>
+         </div>
+         <div class="right__cart">
+            <div class="circle" onclick="number()">
+               <div class="number">
+                  <h2>1</h2>
+               </div>
+               <div class="info">
+                  <p>Корзина</p>
+               </div>
+            </div>
+            <div class="circle" onclick="number()">
+               <div class="number">
+                  <h2>2</h2>
+               </div>
+               <div class="info">
+                  <p>Оформление заказа</p>
+               </div>
+            </div>
+            <div class="circle" onclick="number()">
+               <div class="number">
+                  <h2>3</h2>
+               </div>
+               <div class="info">
+                  <p>Заказ</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <section class="home">
+
+      <div class="first__container">
+         <h1 class="header__text">Заказ на доставку</h1>
+         <div class="container">
+            <div class="item">
+               <div class="box box1">
+                  <p>Имя</p>
+               </div>
+               <div class="box box2"><input type="text" placeholder="Илья"></div>
+            </div>
+            <div class="item">
+               <div class="box box1">
+                  <p>Номер телефона</p>
+               </div>
+               <div class="box box2"><input type="text" placeholder="+7 999 999-99-99"></div>
+            </div>
+            <div class="item">
+               <div class="box box1">
+                  <p>Адрес доставки</p>
+               </div>
+               <div class="box box2"><textarea name="Delivery address" id="delivery__address" cols="10" rows="2"
+                     placeholder="Адрес доставки"></textarea></div>
+            </div>
+            <div class="item">
+               <div class="box box1">
+                  <p>Время доставки</p>
+               </div>
+
+               <div class="box box2">
+                  <select name="time" id="time">
+                     <option value="1">Побыстрее</option>
+                     <option value="2">15:00 - 15:30</option>
+                     <option value="3">15:00 - 15:30</option>
+                     <option value="4">15:00 - 15:30</option>
+                     <option value="5">15:00 - 15:30</option>
+                     <option value="6">15:00 - 15:30</option>
+                     <option value="7">15:00 - 15:30</option>
+                     <option value="8">15:00 -15:30</option>
+                     <option value="9">15:00 -15:30</option>
+                     <option value="10">15:00 - 15:30</option>
+                  </select>
+               </div>
+            </div>
+            <div class="promokod">
+               <h1 class="header__promokod">Промокод</h1>
+               <div class="box">
+                  <input type="text" placeholder="Введите промокод">
+                  <button>Применить</button>
+               </div>
+            </div>
+            <div class="container">
+               <div class="Box__pay">
+                  <h2 class="header__pay">Способы оплаты</h2>
+                  <div class="box">
+                     <div class="item">
+                        <input type="radio" name="pay" id="payCard"> <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                        <p>Картой на сайте</p>
+                     </div>
+                     <div class="payCard">
+                        <div class="big__box">
+                           <div class="payCard__box">
+                              <input type="number" id="number_card" placeholder="Номер карты">
+                              <input type="number" id="month_card" placeholder="11/25">
+                              <input type="number" id="cvc_card" placeholder="CVC">
+                           </div>
+                           <div class="payCard__box">
+                              <img src="../images/image 37.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <input type="radio" name="pay" id="nalichi"> <i class="fa fa-money" aria-hidden="true"></i>
+                        <p>Наличными</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bonus">
+            <input type="checkbox"><p>Сообщать о бонусах, акциях и новых продуктах <span>i</span></p>
+         </div>
+            <a href="../html/cart.html" class="close"><i class="fa fa-angle-left" aria-hidden="true"></i> Вернуться в магазин</a>
+            <a href="../html/making_an_order.html" class="order">Оформить заказ <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="second__container">
+         <h3 class="header__second__container">Состов заказа</h3>
+         <div class="container">
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+            <div class="box">
+               <div class="item">
+                  <div class="small__box">
+                     <h3>Кломбо за 599 ₽</h3>
+                  </div>
+                  <div class="small__box">
+                     <h2>599₽</h2>
+                  </div>
+               </div>
+               <p>Средняя 30 см, традиционное тесто</p>
+            </div>
+         </div>
+
+         <div class="bigBox">
+            <div class="box">
+               <h2>Сумма заказа</h2>
+            </div>
+            <div class="box">
+               <h1>1 048 ₽</h1>
+            </div>
+         </div>
+         <p class="Free__Shipping">Беспалтная доставка</p>
+      </div>
+   </section>
+
+
+
+
+
+   <footer class="footer">
+      <div class="left">
+         <div class="logo">
+            <a href=""><img src="../images/Rectangle 76.png" alt=""></a>
+         </div>
+         <div class="box">
+            <a href="">Калорийность и состав</a>
+            <a href="">Правовая информация</a>
+         </div>
+         <div class="social-media">
+            <p>Мы в соцсетях</p>
+            <div class="box">
+               <div class="item">
+                  <a href="">YouTube</a>
+                  <a href="">Instagram</a>
+               </div>
+               <div class="item">
+                  <a href="">Facebook</a>
+                  <a href="">ВКонтакте</a>
+               </div>
+               <div class="item">
+                  <a id="adress" href="https://www.google.ru/maps/place/%D0%BF%D1%80.+%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+86%D0%B2,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+119415/@55.6613636,37.4776425,442m/data=!3m2!1e3!4b1!4m5!3m4!1s0x46b54da002656bc7:0xa799933657c1d4f!8m2!3d55.6613606!4d37.4798312"
+                     target="_blanck">Москва ул. Проспект <br> Вернадского 86В</a>
+               </div>
+            </div>
+         </div>
+         <div class="protection">
+            <p>YaBao Все праав защищены © 2022</p>
+         </div>
+      </div>
+      <div class="right">
+         <p>Остались вопросы? А мы всегда на связи:</p>
+         <div class="container">
+            <div class="box">
+               <img src="../images/image 17.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 18.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 19.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 20.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 21.png" alt="">
+            </div>
+            <div class="box">
+               <img src="../images/image 22.png" alt="">
+            </div>
+            <div class="box box1">
+               <p>Написать нам</p>
+            </div>
+         </div>
+         <h1>8 499 391-84-49</h1>
+         <a href="" id="call">Заказать звонок</a>
+         <p class="none">YaBao Все праав защищены © 2022</p>
+      </div>
+   </footer>
+
+   <script src="../js/script.js"></script>
+</body>
+
+</html>
