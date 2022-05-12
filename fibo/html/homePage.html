@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css">
-   <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+   <link rel="stylesheet" href="../slick/slick-theme.css">
+   <link rel="stylesheet" href="../slick/slick.css">
    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../css/style.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="theme-color" content="#6600ff">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sharipov Khushnud</title>
+   <title>Document</title>
 </head>
 
 <body id="body">
@@ -63,6 +63,7 @@
    </header>
 
    <div class="slider">
+      <div class="fiboSlider">
          <div><img src="../images/image 31 (1).png" alt=""></div>
          <div><img src="../images/image 5.png" alt=""></div>
          <div><img src="../images/image 31 (1).png" alt=""></div>
@@ -70,6 +71,7 @@
          <div><img src="../images/image 31 (1).png" alt=""></div>
          <div><img src="../images/image 31 (1).png" alt=""></div>
          <div><img src="../images/image 31 (1).png" alt=""></div>
+      </div>
    </div>
 
    <section class="home">
@@ -551,17 +553,15 @@
    </form>
 
    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script src="../slick-1.8.1/slick/slick.min.js"></script>
+   <script src="../slick/slick.min.js"></script>
    <script src="../js/script.js"></script>
 
    <script>
-      
-      $(".slider").slick({
+      $('.fiboSlider').slick({
          slidesToShow: 3,
          slidesToScroll: 1,
          autoplay: true,
          autoplaySpeed: 2000,
-         infinite: true,
          responsive: [
                {
                   breakpoint: 770,
@@ -578,7 +578,6 @@
                }
             ]
       });
-      
    </script>
 
 </body>
